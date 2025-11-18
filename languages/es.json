@@ -19,8 +19,14 @@
         "title": "Proyectos",
         "games": "Programación de Videojuegos",
         "music": "Composición Musical para Videojuegos",
-        "websites": "Paginas Web"
+        "websites": "Paginas Web",
+        "videogames": "Videojuego",
+        "video": "Ver Video...",
+        "webpage": "Página Web",
+        "page": "Visitar Página..."
     },
+
+
 
     "contact": {
         "title": "Contacto",
