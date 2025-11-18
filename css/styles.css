@@ -1,0 +1,519 @@
+/* Reset CSS*/
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;   
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Jost', sans-serif;    
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+/* Cierre Reset CSS*/
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+/* JS */
+
+.sticky{
+    position: fixed;
+    top: 0; 
+    z-index: 100;
+}
+
+
+/* Seccion 1 */
+
+.seccion_1{
+    width: 100%;
+    height: 80%;
+    background: url('../img/fondo_header_1.jpg'); background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+
+.seccion_1_encabezado{
+    font-size: 3rem;
+    font-weight: 550;
+    color: white;
+    background-color: #7e43ff;
+    padding: 0 3rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1rem;
+    border-bottom: 5rem;
+    text-shadow: 0.2rem 0.2rem 0.5rem gray;
+    transform: skew(-12deg);
+    box-shadow: 1rem 1rem 2rem black;
+}
+
+.seccion_1 img{
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 0.5rem dotted wheat;
+    box-shadow: 2rem 2rem 2rem black;
+    padding: 0.5rem;
+    opacity: 0.9;
+
+}
+
+.nombre_persona{
+    font-size: 3rem;
+    font-weight: 550;
+    color: white;
+    background-color: #7e43ff;
+    padding: 0.5rem 3rem;
+    text-transform: uppercase;
+    margin: 5rem 0;
+    letter-spacing: 0.3rem;
+    transform: skew(-12deg);
+    text-shadow: 0.2rem 0.2rem 0.5rem gray;
+    box-shadow: 3rem 3rem 2rem rgba(0, 0, 0, 0.7);
+}
+
+.seccion_1_btn{
+    font-size: 2rem;
+    font-weight: 550;
+    background-color: white;
+    color: #212121;
+    border: 0.5rem solid #212121;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0.5rem 0.5rem 1.5rem black;
+}
+
+.languages{
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    
+}
+
+.lang-button{
+    background: none;
+    color:white;
+    border: 0.1rem solid rgb(0, 0, 0);
+    font-size: 1.7rem;
+    padding: 0.2rem 0.5rem;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+/* Cierre Seccion 1 */
+
+/* Navegación */
+
+.navbar {
+    width: 100%;
+    height: 4rem;
+    background-color: #7e43ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0.5rem 0.5rem 1.5rem black;
+}
+
+
+.navbar_link {
+    position: relative;              /* NECESARIO para ubicar el ::before */
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+    margin: 0 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar_link:hover {
+    color: #212121;
+}
+
+.navbar_link::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;                    /* Ajustá según lo que quieras */
+    left: 0;
+    height: 2px;                     /* Alto de la línea */
+    width: 0%;                       /* Comienza oculta */
+    background-color: #212121;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar_link:hover::before {
+    width: 100%;                     /* La línea se expande al hover */
+}
+
+
+
+/* Cierre Navegación */
+
+/* Seccion 2 */
+.seccion_2{
+    width: 100%;
+    height: 100%;
+    padding: 10rem 0 2rem 0;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.seccion_2_titulo{
+    font-size: 3rem;
+    font-weight: 400;
+    color: #212121;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    border-bottom: 0.3rem solid #212121;
+    text-shadow: 0.2rem 0.2rem 0.5rem #212121;
+    animation-name: focus-in-contract;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
+@keyframes focus-in-contract {
+    0% {
+      letter-spacing: 1rem;
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      letter-spacing: normal;
+      filter: blur(0px);
+      opacity: 1;
+    }    
+  }
+
+.seccion_2_parrafo {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #212121;
+    text-align: center;  
+    padding: 5rem 0 5rem 0;  
+    padding-inline: 16rem;
+    letter-spacing: 0.2rem;
+    text-shadow: 0.2rem 0.2rem 0.5rem gray;
+
+}
+
+
+.servicios{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 5rem;
+}
+
+.servicio{
+    text-align: center;
+}
+
+.servicio i{
+    font-size: 4rem;
+    color: #212121;
+    margin-bottom: 2rem;
+    text-shadow: 1.2rem 1.2rem 0.6rem rgba(0, 0, 0, 0.3);
+}
+
+.servicio h3{
+    font-size: 2rem;
+    font-weight: 400;
+    color: white;
+    background-color: #777;
+    letter-spacing: 0.2rem;
+    width: 20rem;
+    transform: skew(-12deg);
+    box-shadow: 0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
+    margin-bottom: 1rem;
+}
+
+.servicio:first-child,
+.servicio:last-child{
+    align-self: flex-start;
+}
+/* Cierre Seccion 2 */
+
+/* Seccion 3 */
+.seccion_3{
+    width: 100%;
+    height: 100%;
+    padding: 8rem;
+    font-size: 2rem;
+    text-shadow: 0.3rem 0.3rem 0.5rem gray;
+    background-color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion_3_encabezado{
+    font-size: 3rem;
+    font-weight: 400;
+    color: #212121;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+    border-bottom: 0.3rem solid #212121;
+    text-shadow: 0.2rem 0.2rem 0.5rem #212121;
+}
+
+.musica {
+  width: 100%;
+  text-align: center;
+  margin: 4rem 0 2rem 0;  /* separa del bloque anterior */
+}
+
+.prog {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;  /* separa del bloque siguiente */
+}
+
+.seccion_3_subtitulo {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+
+.envoltura_proyectos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.proyecto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    margin: 2rem;
+    background-color: white;
+    box-shadow: 0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.proyecto:hover{
+    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.5);
+}
+
+.texto_proyecto{
+    text-align: center;
+    position: absolute;
+    top: -15rem;
+    z-index: 10;
+    transition: top 0.3s ease-in-out;
+    text-align: center;
+    margin: 0.5rem 0;
+    letter-spacing: 0.2rem;
+}
+
+.proyecto:hover .texto_proyecto{
+    top: 0.1rem;
+    transition: top 0.3s ease-in-out;
+}
+
+.nombre_proyecto{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #212121;
+    transform: capitalize;
+}
+
+.tecnologias_proyecto{
+    font-size: 1.5rem;
+    font-weight: 450;
+    margin-top: 1rem;
+    color: #212121;
+}
+
+.imagen_proyecto{
+    width: 30rem;
+    transition: opacity 0.3s ease-in-out;
+    object-fit: cover;
+}
+
+.proyecto:hover .imagen_proyecto{
+    opacity: 0.3;
+}
+
+.link_proyecto{
+    font-size: 1.8rem;
+    font-weight: 450;
+    color: #212121;
+    letter-spacing: 0.1;
+    border: 0.1rem solid #222;
+    padding: 0rem 1rem;
+    background-color: white;
+    position: absolute;
+    bottom: -5rem;
+    transition: bottom 0.3s ease-in-out;
+    border-radius: 1rem;
+}
+
+.proyecto:hover .link_proyecto{
+    bottom: 1rem;
+    transition: bottom 0.3s ease-in-out;
+}
+/* Cierre Seccion 3 */
+
+
+
+/* Seccion 4 */
+.seccion_4{
+    width: 100%;
+    height: 70vh;
+    font-size: 2.5rem;
+    text-shadow: 0.3rem 0.3rem 0.5rem gray;
+    background-color: #cec7c7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    justify-content: space-evenly;
+
+}
+
+
+.seccion_4_encabezado{
+    font-size: 3rem;
+    font-weight: 400;
+    color: #212121;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    border-bottom: 0.3rem solid #212121;
+    text-shadow: 0.2rem 0.2rem 0.5rem #212121;
+}
+
+
+.texto_contacto{
+    font-size: 2rem;
+    font-weight: 400;
+    color: #212121;
+    text-align: center;
+    padding-inline: 17.5rem;
+    letter-spacing: 0.2rem;
+    text-shadow: 0.2rem 0.2rem 0.5rem gray;
+}
+
+.formulario_contacto{
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario_contacto input,
+.formulario_contacto textarea{
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 0.1rem solid #212121;
+    box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.formulario_contacto textarea{
+    height: 10rem;
+    max-height: 15rem;
+    max-width: 100%;
+}
+
+.formulario_contacto_btn{
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: #7e43ff;
+    color: white;
+    border: 0.5rem solid #212121;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0.5rem 0.5rem 1.5rem black;
+    cursor: pointer;
+}
+/* Cierre Seccion 4 */
+
+/* Footer */
+
+.seccion_5{
+    width: 100%;
+    height: 10vh;
+    background-color: #212121;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.5rem 0.5rem 1.5rem black;
+}
+
+.social_media{
+    margin-bottom: 1rem;
+}
+
+.social_media_link{
+    font-size: 2rem;
+    color: rgb(27, 26, 26);
+    margin: 0 2.3rem;
+    padding: 1.2rem;
+    border-radius: 0.3rem;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+
+.social_media_link i{
+    font-size: 4rem;
+    padding: 0.5rem;
+    color: rgb(43, 21, 21);
+    box-shadow: #cec7c7 0.5rem 0.5rem 1.5rem;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.social_media_link:hover i{
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+.copyright{
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: white;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+
+/* Cierre Footer */

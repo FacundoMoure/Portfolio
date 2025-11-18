@@ -1,0 +1,34 @@
+{
+    "navbar": {
+        "home": "Home",
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+
+    "title": {
+        "header": "Musician - Web Developer - Programmer"
+    },
+
+    "about-me": {
+        "title": "About Me",
+        "content": "Hi, I'm Facundo Moure, a musician and teacher with over 20 years of experience. I've worked as a live musician, music producer in my recording studio, and composer for various projects. I'm also a web developer and video game programmer, with experience in multiple technologies and programming languages. I'm passionate about creating audiovisual experiences that combine my musical creativity with my technical skills, always striving to deliver unique, high-quality results."
+    },
+
+    "projects": {
+        "title": "Projects",
+        "games": "Videogame Programming",
+        "music": "Music Composition for Videogames",
+        "websites": "Websites"
+    },
+
+    "contact": {
+    "title": "Contact",
+    "phone": "Phone: +54 9 291 4602229",
+    "content": "If you liked my portfolio and want to contact me, you can do so through my E-mail, phone, or my social networks listed below."
+    },
+
+    "footer": {
+        "content": "Copyright © 2025 Facundo Moure. All rights reserved."
+    }
+}
